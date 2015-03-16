@@ -56,7 +56,7 @@ public class DecisionTree {
             // when D decreases in size (subset), will not need to keep track of where
             // the class label is and update "where" accordingly
             if (where != 0) Collections.swap(row, where, 0);
-            D.add(new ArrayList<>(Arrays.asList(line.split(delim))));
+            D.add(row);
         }
 
 
