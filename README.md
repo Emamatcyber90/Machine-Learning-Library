@@ -6,3 +6,5 @@ Will add Naive Bayes, Decision Tree (C4.5), Random Forest, SVM (linear and non-l
 
 DecTree: add missing value support, add gini index and infoGain ratio, continuous features
 implement C5.0 instead of C4.5? more memory efficient, better performance
+
+K-means, hierarchical, DBScan + optimizations
