@@ -24,6 +24,10 @@ public class DecisionTree {
         public void addChild(Node child) {
             this.children.add(child);
         }
+
+        public Node getChild(int idx) {
+            return this.children.get(idx);
+        }
     }
 
     private static Map<String, String> ops = new HashMap<>(); // map of options, descriptions
@@ -171,7 +175,7 @@ public class DecisionTree {
             // while we haven't reached a leaf node
             while (curNode.index != -1) {
                 if (curNode.index < 0) { // if right before leaf
-                    curNode = curNode.children.get(0);
+                    curNode = curNode.getChildren(0);
                     break;
                 }
 
