@@ -175,7 +175,7 @@ public class DecisionTree {
             // while we haven't reached a leaf node
             while (curNode.index != -1) {
                 if (curNode.index < 0) { // if right before leaf
-                    curNode = curNode.getChildren(0);
+                    curNode = curNode.getChild(0);
                     break;
                 }
 
