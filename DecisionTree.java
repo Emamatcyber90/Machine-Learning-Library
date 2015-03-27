@@ -326,7 +326,7 @@ public class DecisionTree {
      * @return
      */
     public static double log(double x, int base) {
-        return Math.log(x)/Math.log(base) + 1e-11;
+        return Math.log(x)/Math.log(base);
     }
 
     /**
